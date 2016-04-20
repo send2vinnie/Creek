@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D46E252-B0A8-436A-9158-55834FC5DDEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Creek</RootNamespace>
+    <AssemblyName>Creek</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Creek.Task/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Quartz.Net 1.0.3 Source\Quartz.NET 1.0.3\lib\2.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="Controller\CreekController.cs" />
+    <Compile Include="Controller\CreekControllerProxy.cs" />
+    <Compile Include="Controller\IRemotableCreekController.cs" />
+    <Compile Include="Controller\RemotingControllerExporter.cs" />
+    <Compile Include="Jobs\ContentMontiorFactory.cs" />
+    <Compile Include="Jobs\ContentDeployJob.cs" />
+    <Compile Include="Jobs\ContentGenJob.cs" />
+    <Compile Include="Jobs\ContentMonitorJob.cs" />
+    <Compile Include="Jobs\ContentOfflineJob.cs" />
+    <Compile Include="Jobs\ContentPauseJob.cs" />
+    <Compile Include="Jobs\ContentResumeJob.cs" />
+    <Compile Include="Jobs\SeedMonitorJob.cs" />
+    <Compile Include="Jobs\JobGeneralDef.cs" />
+    <Compile Include="JsonObject\ContentDetail.cs" />
+    <Compile Include="JsonObject\ContentGenRecipes.cs" />
+    <Compile Include="JsonObject\ContentNode.cs" />
+    <Compile Include="JsonObject\ContentSummaryProperty.cs" />
+    <Compile Include="JsonObject\ContentVersion.cs" />
+    <Compile Include="JsonObject\HistoryComboNode.cs" />
+    <Compile Include="JsonObject\TorrentSeed.cs" />
+    <Compile Include="JsonObject\WorkInProgress.cs" />
+    <Compile Include="JsonObject\DataResult.cs" />
+    <Compile Include="JsonObject\SeedNode.cs" />
+    <Compile Include="JsonObject\SysNotification.cs" />
+    <Compile Include="Tasks\AddTorrentByFileTask.cs" />
+    <Compile Include="Tasks\AddTorrentByMagnetUrlTask.cs" />
+    <Compile Include="Tasks\AddTorrentByUrlTask.cs" />
+    <Compile Include="Tasks\ResumeAllTorrentsTask.cs" />
+    <Compile Include="Tasks\DownloaderGenTask.cs" />
+    <Compile Include="Tasks\GetTorrentFileListTask.cs" />
+    <Compile Include="Tasks\PauseAllTorrentsTask.cs" />
+    <Compile Include="Tasks\PauseTorrentTask.cs" />
+    <Compile Include="Tasks\RemoveTorrentTask.cs" />
+    <Compile Include="Tasks\ResumeTorrentTask.cs" />
+    <Compile Include="Tasks\RetrieveTorrentDetailsTask.cs" />
+    <Compile Include="Utility\Check.cs" />
+    <Compile Include="Utility\Http Range Reader\HttpRangeReader.cs" />
+    <Compile Include="Tasks\IManagementTask.cs" />
+    <Compile Include="JsonObject\TorrentDetail.cs" />
+    <Compile Include="JsonObject\TorrentFile.cs" />
+    <Compile Include="Tasks\MetafileGenTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\QbtAdapter.cs" />
+    <Compile Include="ResourceLib\Accelerator.cs" />
+    <Compile Include="ResourceLib\AcceleratorResource.cs" />
+    <Compile Include="ResourceLib\BitmapFile.cs" />
+    <Compile Include="ResourceLib\BitmapResource.cs" />
+    <Compile Include="ResourceLib\CursorDirectoryResource.cs" />
+    <Compile Include="ResourceLib\CursorResource.cs" />
+    <Compile Include="ResourceLib\DeviceIndependentBitmap.cs" />
+    <Compile Include="ResourceLib\DialogExTemplate.cs" />
+    <Compile Include="ResourceLib\DialogExTemplateControl.cs" />
+    <Compile Include="ResourceLib\DialogResource.cs" />
+    <Compile Include="ResourceLib\DialogTemplate.cs" />
+    <Compile Include="ResourceLib\DialogTemplateBase.cs" />
+    <Compile Include="ResourceLib\DialogTemplateControl.cs" />
+    <Compile Include="ResourceLib\DialogTemplateControlBase.cs" />
+    <Compile Include="ResourceLib\DialogTemplateUtil.cs" />
+    <Compile Include="ResourceLib\DirectoryResource.cs" />
+    <Compile Include="ResourceLib\FixedFileInfo.cs" />
+    <Compile Include="ResourceLib\FontDirectoryEntry.cs" />
+    <Compile Include="ResourceLib\FontDirectoryResource.cs" />
+    <Compile Include="ResourceLib\FontResource.cs" />
+    <Compile Include="ResourceLib\Gdi32.cs" />
+    <Compile Include="ResourceLib\GenericResource.cs" />
+    <Compile Include="ResourceLib\IconDirectoryResource.cs" />
+    <Compile Include="ResourceLib\IconFile.cs" />
+    <Compile Include="ResourceLib\IconFileIcon.cs" />
+    <Compile Include="ResourceLib\IconImageResource.cs" />
+    <Compile Include="ResourceLib\IconResource.cs" />
+    <Compile Include="ResourceLib\Kernel32.cs" />
+    <Compile Include="ResourceLib\ManifestResource.cs" />
+    <Compile Include="ResourceLib\MenuExTemplate.cs" />
+    <Compile Include="ResourceLib\MenuExTemplateItem.cs" />
+    <Compile Include="ResourceLib\MenuExTemplateItemCollection.cs" />
+    <Compile Include="ResourceLib\MenuExTemplateItemCommand.cs" />
+    <Compile Include="ResourceLib\MenuExTemplateItemPopup.cs" />
+    <Compile Include="ResourceLib\MenuResource.cs" />
+    <Compile Include="ResourceLib\MenuTemplate.cs" />
+    <Compile Include="ResourceLib\MenuTemplateBase.cs" />
+    <Compile Include="ResourceLib\MenuTemplateItem.cs" />
+    <Compile Include="ResourceLib\MenuTemplateItemCollection.cs" />
+    <Compile Include="ResourceLib\MenuTemplateItemCommand.cs" />
+    <Compile Include="ResourceLib\MenuTemplateItemPopup.cs" />
+    <Compile Include="ResourceLib\Resource.cs" />
+    <Compile Include="ResourceLib\ResourceId.cs" />
+    <Compile Include="ResourceLib\ResourceInfo.cs" />
+    <Compile Include="ResourceLib\ResourceTableHeader.cs" />
+    <Compile Include="ResourceLib\ResourceUtil.cs" />
+    <Compile Include="ResourceLib\StringFileInfo.cs" />
+    <Compile Include="ResourceLib\StringResource.cs" />
+    <Compile Include="ResourceLib\StringTable.cs" />
+    <Compile Include="ResourceLib\StringTableEntry.cs" />
+    <Compile Include="ResourceLib\User32.cs" />
+    <Compile Include="ResourceLib\VarFileInfo.cs" />
+    <Compile Include="ResourceLib\VarTable.cs" />
+    <Compile Include="ResourceLib\VersionResource.cs" />
+    <Compile Include="ResourceLib\Winver.cs" />
+    <Compile Include="Utility\Http Post Request\Extensions.cs" />
+    <Compile Include="Utility\Http Post Request\FileSizeConverter.cs" />
+    <Compile Include="Utility\Http Post Request\GenericEventArgs.cs" />
+    <Compile Include="Utility\Http Post Request\HttpHandler.cs" />
+    <Compile Include="Utility\Http Post Request\MultiPartPostRequestBuilder.cs" />
+    <Compile Include="Utility\Http Post Request\PostRequestBuilder.cs" />
+    <Compile Include="Utility\Http Post Request\RequestBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Quartz Creek\src\Quartz\Quartz.2010.csproj">
+      <Project>{AEF8823B-E45B-4B35-A4D0-C08C1196D017}</Project>
+      <Name>Quartz.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\Json40r2\Source\Src\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resources\MonoTorrent 0.9\src\MonoTorrent\MonoTorrent.csproj">
+      <Project>{411A9E0E-FDC6-4E25-828A-0C2CD1CD96F8}</Project>
+      <Name>MonoTorrent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="AppResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GLoader-Gamania P2P Promotion.exe.gz" />
+    <EmbeddedResource Include="Resources\GLoader.exe.gz" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\upx.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Creek Task List.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

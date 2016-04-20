@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContentDetailReadFailed" xml:space="preserve">
+    <value>內容監控狀態資料 (Content Details) 讀取失敗, 原因: {0}</value>
+  </data>
+  <data name="ContentNotDeployToSeed" xml:space="preserve">
+    <value>內容尚未部署至官方種子</value>
+  </data>
+  <data name="ContentRecipesReadFailed" xml:space="preserve">
+    <value>內容製作輸入資料 (Recipes) 讀取失敗, 原因: {0}</value>
+  </data>
+  <data name="ContentRecipesRemoveFailed" xml:space="preserve">
+    <value>待監控之內容製作輸入資料 (Recipes) 移除失敗, 除設定檔之外請避免手動更新任何其他之檔案, 原因: {0}</value>
+  </data>
+  <data name="ContentRecipesUpdateFailed" xml:space="preserve">
+    <value>待監控之內容製作輸入資料 (Recipes) 更新失敗, 除設定檔之外請避免手動更新任何其他之檔案, 原因: {0}</value>
+  </data>
+  <data name="ContentVersionListUpdateFailed" xml:space="preserve">
+    <value>待監控之內容版本清單更新失敗, 除設定檔之外請避免手動更新任何其他之檔案, 原因: {0}</value>
+  </data>
+  <data name="DirectoryNotExist" xml:space="preserve">
+    <value>指定的檔案目錄{0}不存在, 請檢查參數設定是否正確</value>
+  </data>
+  <data name="DownloaderGenTaskName" xml:space="preserve">
+    <value>下載器產生</value>
+  </data>
+  <data name="EndJobExecution" xml:space="preserve">
+    <value>{0}作業執行完畢</value>
+  </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>指定的檔案{0}不存在, 請檢查參數設定是否正確</value>
+  </data>
+  <data name="InputParameterRequired" xml:space="preserve">
+    <value>指定的參數或設定值不存在或長度為零, 請檢查參數或設定是否正確</value>
+  </data>
+  <data name="InputParameterSouldBePositive" xml:space="preserve">
+    <value>指定的參數必須是大於或等於零的數值, 請檢查參數或設定是否正確</value>
+  </data>
+  <data name="InvalidAppSetting" xml:space="preserve">
+    <value>應用程式設定資料 ({0}) 不存在, 請檢查參數設定是否正確</value>
+  </data>
+  <data name="InvalidContentGenJobConfigCreatedBy" xml:space="preserve">
+    <value>設定檔中的 "ContentGenJob.CreatedBy" 設定有誤, 必須為長度大於零之字串值</value>
+  </data>
+  <data name="InvalidContentGenJobConfigInternalTrackerAnnounceUrl" xml:space="preserve">
+    <value>設定檔中的 "ContentGenJob.InternalTrackerAnnounceUrl" 設定有誤, 必須為長度大於零之字串值</value>
+  </data>
+  <data name="InvalidContentGenJobConfigPieceLengthKB" xml:space="preserve">
+    <value>設定檔中的 "ContentGenJob.PieceLengthKB" 設定有誤, 必須為大於零之正整數</value>
+  </data>
+  <data name="InvalidContentGenJobConfigTrackerAnnounceUrl" xml:space="preserve">
+    <value>設定檔中的 "ContentGenJob.TrackerAnnounceUrl" 設定有誤, 必須為長度大於零之字串值</value>
+  </data>
+  <data name="InvalidContentGenJobDataMapContentSourceUrl" xml:space="preserve">
+    <value>傳入 "ContentGenJob" 的參數 "ContentSourceUrl" 有誤, 必須為長度大於零之字串值</value>
+  </data>
+  <data name="InvalidDisclaimerFullPath" xml:space="preserve">
+    <value>指定的免責聲明 "RFT檔" 不存在</value>
+  </data>
+  <data name="InvalidDownloaderDisplayName" xml:space="preserve">
+    <value>請輸入下載內容物的 "顯示名稱"</value>
+  </data>
+  <data name="InvalidDownloaderGuid" xml:space="preserve">
+    <value>請為下載器產生一個專用的 GUID</value>
+  </data>
+  <data name="InvalidDownloaderHomeUrl" xml:space="preserve">
+    <value>請輸入下載內容物的 "官網位址"</value>
+  </data>
+  <data name="InvalidGoogleAnalyticsProfileID" xml:space="preserve">
+    <value>請輸入下Google Analytics報表的 "資源編號"</value>
+  </data>
+  <data name="InvalidMetafileFullPath" xml:space="preserve">
+    <value>指定的下載內容物 "Torrent檔" 不存在</value>
+  </data>
+  <data name="InvalidNumbericalValue" xml:space="preserve">
+    <value>應用程式設定資料 ({0}) 必須為數值型態, 請檢查參數設定是否正確</value>
+  </data>
+  <data name="InvalidPromotionEventID" xml:space="preserve">
+    <value>索取虛寶活動的 "活動序號" 格式不正確, 必須為長度36字元的序號!</value>
+  </data>
+  <data name="InvalidPromotionEventServerUrl" xml:space="preserve">
+    <value>請輸入索取虛寶活動的 "活動伺服器" 的URL</value>
+  </data>
+  <data name="InvalidSeedWebIPListSetting" xml:space="preserve">
+    <value>應用程式設定資料 ({0}) 不正確, 官方種子IP位址清單設定必須為以分號 (;) 區隔且不重複之IP位址</value>
+  </data>
+  <data name="JobExecutionFailed" xml:space="preserve">
+    <value>{0}作業執行失敗, 原因: {1}</value>
+  </data>
+  <data name="MetafileDeployTaskName" xml:space="preserve">
+    <value>中介資料部署</value>
+  </data>
+  <data name="MetafileGenTaskName" xml:space="preserve">
+    <value>中介資料檔產生</value>
+  </data>
+  <data name="NLogConfigNotFound" xml:space="preserve">
+    <value>找不到 "NLog.config" 設定檔, 本系統採用 NLog 做為系統日誌記錄工具, 請確定 NLog 之設定是否正確</value>
+  </data>
+  <data name="OfficalSeedCmdFailed" xml:space="preserve">
+    <value>官方種子 (IP={0}) 命令執行作業 ({1}) 失敗</value>
+  </data>
+  <data name="ResBitmap207NotFound" xml:space="preserve">
+    <value>原因: 找不到Banner Bitmap (207), 下載器生成作業無法繼續</value>
+  </data>
+  <data name="ResDialog201NotFound" xml:space="preserve">
+    <value>原因: 找不到Dialog Template (201), 下載器生成作業無法繼續</value>
+  </data>
+  <data name="ResDisclaimerSlot40112NotFound" xml:space="preserve">
+    <value>原因: 找不到Disclaimer Template (40112), 下載器生成作業無法繼續</value>
+  </data>
+  <data name="ResEmbededSatelliteDllNotFound" xml:space="preserve">
+    <value>原因: 找不到Embedded Satellite Resource (1000), 下載器生成作業無法繼續</value>
+  </data>
+  <data name="ResIcon128NotFound" xml:space="preserve">
+    <value>原因: 找不到程式 ICON (128), 下載器生成作業無法繼續</value>
+  </data>
+  <data name="ResStringTemplateNotFound" xml:space="preserve">
+    <value>原因: 找不到String Template ({0}), 下載器生成作業無法繼續</value>
+  </data>
+  <data name="ResTorrentSlot2011NotFound" xml:space="preserve">
+    <value>原因: 找不到Torrent Template (1022), 下載器生成作業無法繼續</value>
+  </data>
+  <data name="SeedWebConnectionFailed" xml:space="preserve">
+    <value>與官方種子間之連線尚未建立或無法建立連線</value>
+  </data>
+  <data name="StartJobExecution" xml:space="preserve">
+    <value>開始執行{0}作業</value>
+  </data>
+  <data name="SystemInitializationFailed" xml:space="preserve">
+    <value>系統初始化失敗, 請根據系統日誌記錄檔所提供的資訊進行問題排除</value>
+  </data>
+  <data name="TaskExecutionDone" xml:space="preserve">
+    <value>作業步驟 ({0}) 執行完畢</value>
+  </data>
+  <data name="UPXCompressionFailed" xml:space="preserve">
+    <value>下載器壓縮失敗, 請重新再試或選擇不壓縮下載器</value>
+  </data>
+  <data name="UrlNotExist" xml:space="preserve">
+    <value>指定的URL ({0}) 不存在, 請檢查參數設定是否正確</value>
+  </data>
+</root>
