@@ -1,5 +1,5 @@
 # Creek
-A background service for administrating qBittorrent.
+A background service (a collection of [Quartz.NET](http://www.quartz-scheduler.net/) jobs) for administrating qBittorrent.
 
 ## qBitorrent Support
 
